@@ -27,7 +27,7 @@ src/
 ├── exercices.ts      
 ├── components/
 │   └── Exercice.tsx 
-└── exercices/        # C'est dans ces dossiers que vous travaillez
+└── exercices/        # C'est dans ces dossiers que tu travailles
     └── 01-jsx-composants/        # Thématique 1 — JSX & Composants
         ├── 01-premier-monstre/   # Exercice 1
         ├── 02-chasse-aux-bugs/   # Exercice 2
