@@ -1,6 +1,6 @@
 # 🐲 MonsterDex — Exercices React
 
-Projet d'entraînement pour le cours **React + TypeScript** de K.School.
+Projet d'entraînement pour le cours **React**.
 
 Tu vas construire, exercice après exercice, une petite application : une galerie
 de monstres rigolos. Chaque exercice te fait pratiquer une notion du cours.
