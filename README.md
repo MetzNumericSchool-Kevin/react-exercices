@@ -21,13 +21,13 @@ exercices** grâce au menu de gauche.
 
 ```
 src/
-├── main.tsx          
-├── App.tsx           
-├── Home.tsx          
-├── exercices.ts      
+├── main.tsx
+├── App.tsx
+├── Home.tsx
+├── exercices.ts
 ├── components/
-│   └── Exercice.tsx 
-└── exercices/        # C'est dans ces dossiers que tu travailles
+│   └── Exercice.tsx
+└── exercices/        # C'est dans ces dossiers que tu travailleras
     └── 01-jsx-composants/        # Thématique 1 — JSX & Composants
         ├── 01-premier-monstre/   # Exercice 1
         ├── 02-chasse-aux-bugs/   # Exercice 2
@@ -35,5 +35,6 @@ src/
 ```
 
 Chaque dossier d'exercice contient :
+
 - un **`README.md`** avec les consignes (objectif, étapes, indices, critères) ;
 - le ou les **fichiers `.tsx`** à compléter.
