@@ -14,6 +14,10 @@ import CompteurMonstre from "./exercices/03-evenements-state/01-compteur-monstre
 import IdentiteMonstre from "./exercices/03-evenements-state/02-identite-monstre/IdentiteMonstre";
 import FiltreBestiaire from "./exercices/03-evenements-state/03-filtre-bestiaire/FiltreBestiaire";
 import FormulaireMonstre from "./exercices/03-evenements-state/04-formulaire-monstre/FormulaireMonstre";
+import MonstreVivant from "./exercices/04-rendu-conditionnel-listes/01-monstre-vivant/MonstreVivant";
+import GalerieMonstres from "./exercices/04-rendu-conditionnel-listes/02-galerie-monstres/GalerieMonstres";
+import FiltreBestiaireType from "./exercices/04-rendu-conditionnel-listes/03-filtre-type/FiltreBestiaire";
+import BestiaireComplet from "./exercices/04-rendu-conditionnel-listes/04-bestiaire-complet/BestiaireComplet";
 
 const allExercices = seances.flatMap((s) => s.exercices);
 
@@ -154,6 +158,39 @@ export default function App() {
             element={
               <Exercice meta={allExercices[11]}>
                 <FormulaireMonstre />
+              </Exercice>
+            }
+          />
+          {/* Séance 4 · Rendu conditionnel & Listes */}
+          <Route
+            path="/05-listes/01-monstre-vivant"
+            element={
+              <Exercice meta={allExercices[12]}>
+                <MonstreVivant />
+              </Exercice>
+            }
+          />
+          <Route
+            path="/05-listes/02-galerie-monstres"
+            element={
+              <Exercice meta={allExercices[13]}>
+                <GalerieMonstres />
+              </Exercice>
+            }
+          />
+          <Route
+            path="/05-listes/03-filtre-type"
+            element={
+              <Exercice meta={allExercices[14]}>
+                <FiltreBestiaireType />
+              </Exercice>
+            }
+          />
+          <Route
+            path="/05-listes/04-bestiaire-complet"
+            element={
+              <Exercice meta={allExercices[15]}>
+                <BestiaireComplet />
               </Exercice>
             }
           />

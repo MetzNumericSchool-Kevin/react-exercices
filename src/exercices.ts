@@ -155,6 +155,55 @@ export const seances: { label: string; exercices: Exercice[] }[] = [
       },
     ],
   },
+  {
+    label: "Séance 4 · Rendu conditionnel & Listes",
+    exercices: [
+      {
+        path: "/05-listes/01-monstre-vivant",
+        numero: "01",
+        titre: "Le monstre vivant",
+        emoji: "🐉",
+        resume:
+          "Utilise && et le ternaire pour afficher ou masquer des éléments selon l'état du monstre.",
+        fichiers: [
+          "src/exercices/04-rendu-conditionnel-listes/01-monstre-vivant/MonstreVivant.tsx",
+        ],
+      },
+      {
+        path: "/05-listes/02-galerie-monstres",
+        numero: "02",
+        titre: "La galerie de monstres",
+        emoji: "🗂️",
+        resume:
+          "Affiche un tableau d'objets typés Monstre[] avec map() et la prop key.",
+        fichiers: [
+          "src/exercices/04-rendu-conditionnel-listes/02-galerie-monstres/GalerieMonstres.tsx",
+        ],
+      },
+      {
+        path: "/05-listes/03-filtre-type",
+        numero: "03",
+        titre: "Le filtre du bestiaire",
+        emoji: "🔎",
+        resume:
+          "Filtre dynamiquement la liste de monstres par type avec useState et filter().",
+        fichiers: [
+          "src/exercices/04-rendu-conditionnel-listes/03-filtre-type/FiltreBestiaire.tsx",
+        ],
+      },
+      {
+        path: "/05-listes/04-bestiaire-complet",
+        numero: "04",
+        titre: "Le bestiaire complet",
+        emoji: "📖",
+        resume:
+          "Synthèse : recherche, filtrage multi-critères, badge de rareté typé et suppression.",
+        fichiers: [
+          "src/exercices/04-rendu-conditionnel-listes/04-bestiaire-complet/BestiaireComplet.tsx",
+        ],
+      },
+    ],
+  },
 ];
 
 export const exercices: Exercice[] = seances.flatMap((s) => s.exercices);
