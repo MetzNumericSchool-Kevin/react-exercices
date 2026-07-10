@@ -27,7 +27,7 @@ export const seances: { label: string; exercices: Exercice[] }[] = [
         numero: "02",
         titre: "La chasse aux bugs",
         emoji: "🐛",
-        resume: "Une affiche est pleine d’erreurs JSX. À toi de la réparer !",
+        resume: "Une affiche est pleine d'erreurs JSX. À toi de la réparer !",
         fichiers: [
           "src/exercices/02-jsx-composants/02-chasse-aux-bugs/AfficheReparee.tsx",
         ],
@@ -200,6 +200,55 @@ export const seances: { label: string; exercices: Exercice[] }[] = [
           "Synthèse : recherche, filtrage multi-critères, badge de rareté typé et suppression.",
         fichiers: [
           "src/exercices/04-rendu-conditionnel-listes/04-bestiaire-complet/BestiaireComplet.tsx",
+        ],
+      },
+    ],
+  },
+  {
+    label: "Séance 5 · Cycle de vie & Hooks",
+    exercices: [
+      {
+        path: "/06-hooks/01-rugissement-monstre",
+        numero: "01",
+        titre: "Le rugissement du monstre",
+        emoji: "🔊",
+        resume:
+          "Utilise useEffect pour faire rugir le monstre automatiquement à son apparition.",
+        fichiers: [
+          "src/exercices/05-cycle-vie-hooks/01-rugissement-monstre/RugissementMonstre.tsx",
+        ],
+      },
+      {
+        path: "/06-hooks/02-regeneration-monstre",
+        numero: "02",
+        titre: "La régénération du monstre",
+        emoji: "💚",
+        resume:
+          "Ajoute un intervalle de régénération avec useEffect, puis nettoie-le pour éviter la fuite.",
+        fichiers: [
+          "src/exercices/05-cycle-vie-hooks/02-regeneration-monstre/RegenerationMonstre.tsx",
+        ],
+      },
+      {
+        path: "/06-hooks/03-invocation-rapide",
+        numero: "03",
+        titre: "L'invocation rapide",
+        emoji: "🔮",
+        resume:
+          "Utilise useRef pour donner le focus automatique à un champ dès le montage.",
+        fichiers: [
+          "src/exercices/05-cycle-vie-hooks/03-invocation-rapide/InvocationRapide.tsx",
+        ],
+      },
+      {
+        path: "/06-hooks/04-chronometre-combat",
+        numero: "04",
+        titre: "Le chronomètre de combat",
+        emoji: "⏱️",
+        resume:
+          "Synthèse de la séance : deux useEffect distincts, cleanup et useRef combinés.",
+        fichiers: [
+          "src/exercices/05-cycle-vie-hooks/04-chronometre-combat/ChronometreCombat.tsx",
         ],
       },
     ],

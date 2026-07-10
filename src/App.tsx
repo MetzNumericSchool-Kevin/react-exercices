@@ -18,6 +18,10 @@ import MonstreVivant from "./exercices/04-rendu-conditionnel-listes/01-monstre-v
 import GalerieMonstres from "./exercices/04-rendu-conditionnel-listes/02-galerie-monstres/GalerieMonstres";
 import FiltreBestiaireType from "./exercices/04-rendu-conditionnel-listes/03-filtre-type/FiltreBestiaire";
 import BestiaireComplet from "./exercices/04-rendu-conditionnel-listes/04-bestiaire-complet/BestiaireComplet";
+import RugissementMonstre from "./exercices/05-cycle-vie-hooks/01-rugissement-monstre/RugissementMonstre";
+import RegenerationScene from "./exercices/05-cycle-vie-hooks/02-regeneration-monstre/Scene";
+import InvocationRapide from "./exercices/05-cycle-vie-hooks/03-invocation-rapide/InvocationRapide";
+import ChronometreCombat from "./exercices/05-cycle-vie-hooks/04-chronometre-combat/ChronometreCombat";
 
 const allExercices = seances.flatMap((s) => s.exercices);
 
@@ -191,6 +195,39 @@ export default function App() {
             element={
               <Exercice meta={allExercices[15]}>
                 <BestiaireComplet />
+              </Exercice>
+            }
+          />
+          {/* Séance 5 · Cycle de vie & Hooks */}
+          <Route
+            path="/06-hooks/01-rugissement-monstre"
+            element={
+              <Exercice meta={allExercices[16]}>
+                <RugissementMonstre />
+              </Exercice>
+            }
+          />
+          <Route
+            path="/06-hooks/02-regeneration-monstre"
+            element={
+              <Exercice meta={allExercices[17]}>
+                <RegenerationScene />
+              </Exercice>
+            }
+          />
+          <Route
+            path="/06-hooks/03-invocation-rapide"
+            element={
+              <Exercice meta={allExercices[18]}>
+                <InvocationRapide />
+              </Exercice>
+            }
+          />
+          <Route
+            path="/06-hooks/04-chronometre-combat"
+            element={
+              <Exercice meta={allExercices[19]}>
+                <ChronometreCombat />
               </Exercice>
             }
           />
