@@ -349,6 +349,115 @@ export const seances: { label: string; exercices: Exercice[] }[] = [
       },
     ],
   },
+  {
+    label: "Séance 8 · React Router avancé",
+    exercices: [
+      {
+        path: "/09-router-avance/01-fiche-du-monstre",
+        numero: "01",
+        titre: "La fiche du monstre",
+        emoji: "🪪",
+        resume:
+          "Crée une route dynamique :id et lis-la avec useParams pour afficher une fiche.",
+        fichiers: [
+          "src/exercices/08-router-avance/01-fiche-du-monstre/FicheDuMonstre.tsx",
+        ],
+      },
+      {
+        path: "/09-router-avance/02-quartier-general",
+        numero: "02",
+        titre: "Le quartier général",
+        emoji: "🏯",
+        resume:
+          "Construis un layout partagé avec des routes imbriquées et le composant Outlet.",
+        fichiers: [
+          "src/exercices/08-router-avance/02-quartier-general/QuartierGeneral.tsx",
+        ],
+      },
+      {
+        path: "/09-router-avance/03-repli-tactique",
+        numero: "03",
+        titre: "Repli tactique",
+        emoji: "🚪",
+        resume:
+          "Navigue par le code avec useNavigate : après un formulaire, puis en arrière.",
+        fichiers: [
+          "src/exercices/08-router-avance/03-repli-tactique/RepliTactique.tsx",
+        ],
+      },
+      {
+        path: "/09-router-avance/04-arene-des-champions",
+        numero: "04",
+        titre: "L'arène des champions",
+        emoji: "🏟️",
+        resume:
+          "Combine layout partagé (Outlet) et route dynamique :id pour une page de détail.",
+        fichiers: [
+          "src/exercices/08-router-avance/04-arene-des-champions/AreneDesChampions.tsx",
+        ],
+      },
+      {
+        path: "/09-router-avance/05-monsterdex-v2",
+        numero: "05",
+        titre: "MonsterDex v2",
+        emoji: "🐲",
+        resume:
+          "Synthèse : layout partagé, route dynamique et navigation programmatique réunis.",
+        fichiers: [
+          "src/exercices/08-router-avance/05-monsterdex-v2/MonsterdexV2.tsx",
+        ],
+      },
+    ],
+  },
+  {
+    label: "Séance 9 · Hooks personnalisés & Context",
+    exercices: [
+      {
+        path: "/10-hooks/01-bascule-monstre",
+        numero: "01",
+        titre: "La fiche de monstre dépliable",
+        emoji: "🪟",
+        resume:
+          "Extrais la logique d'un boolean toggle dans un hook useToggle pour afficher une fiche de monstre.",
+        fichiers: [
+          "src/exercices/10-hooks-personnalises/01-bascule-monstre/BasculeMonstre.tsx",
+        ],
+      },
+      {
+        path: "/10-hooks/02-monstre-favori",
+        numero: "02",
+        titre: "Le monstre favori",
+        emoji: "⭐",
+        resume:
+          "Persiste le choix d'un monstre favori dans localStorage grâce à un hook useLocalStorage.",
+        fichiers: [
+          "src/exercices/10-hooks-personnalises/02-monstre-favori/MonstreFavori.tsx",
+        ],
+      },
+      {
+        path: "/10-hooks/03-codex-monstres",
+        numero: "03",
+        titre: "Le codex des monstres légendaires",
+        emoji: "📜",
+        resume:
+          "Extrais le pattern data/isLoading/error dans un hook useFetch pour charger un bestiaire légendaire.",
+        fichiers: [
+          "src/exercices/10-hooks-personnalises/03-codex-monstres/CodexMonstres.tsx",
+        ],
+      },
+      {
+        path: "/10-hooks/04-mode-chasse",
+        numero: "04",
+        titre: "Le mode chasse partagé",
+        emoji: "🌗",
+        resume:
+          "Partage un mode jour/nuit entre plusieurs composants avec Context et un hook useModeChasse.",
+        fichiers: [
+          "src/exercices/10-hooks-personnalises/04-mode-chasse/ModeChasse.tsx",
+        ],
+      },
+    ],
+  },
 ];
 
 export const exercices: Exercice[] = seances.flatMap((s) => s.exercices);
